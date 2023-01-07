@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/cb8691b027.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class= "sticky-top">
+        <nav class="navbar fixed-top bg-body-tertiary">
             <div class="navbar-celu">
                 <div >
                  <a class="logo-link" href="./index.html">
@@ -31,16 +31,16 @@
                         Productos
                       </a></li>
                   
-                      <li><a class="nav-menu-item" href="#nutricion">
-                        Nutrición
-                      </a></li>
-                  
-                      <li><a class="nav-menu-item" href="#nosotros">
+                      <li><a class="nav-menu-item" href="./nosotros.html">
                         Nosotros
                       </a></li>
                   
                       <li><a class="nav-menu-item" href="#contacto">
-                        Contacto  
+                        Contacto
+                      </a></li>
+                  
+                      <li><a class="nav-menu-item" href="#preguntas-frecuentes">
+                        Preguntas Frecuentes  
                       </a></li>  
                       <li>
                         <div class="buttons">
@@ -56,11 +56,11 @@
         </nav> 
        
         <!-- Acá va el hero carrousel-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
               
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -93,52 +93,86 @@
             </a>
         </div>
       
-</header>
-<section class="products-section">
+  </header>
+<section id="productos" class="products-section">
+  <h2 class="section-title">Novedades</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="card h-100" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
         <img src="./img/portadas fake/1.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+          <h5 class="card-title">Título del Contenido</h5>
+          <p class="card-text">$800</p>
+          <button type="button" class="boton">Agregar al carrito</button>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
         <img src="./img/portadas fake/2.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+          <h5 class="card-title">Título del Contenido</h5>
+          <p class="card-text">$850</p>
+          <button type="button" class="boton">Agregar al carrito</button>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
         <img src="./img/portadas fake/3.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-          <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+          <h5 class="card-title">Título del Contenido</h5>
+          <p class="card-text">$600</p>
+          <button type="button" class="boton">Agregar al carrito</button>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="width: 18rem;">
+      <div class="card" style="width: 15rem;">
         <img src="./img/portadas fake/4.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+          <h5 class="card-title">Título del Contenido</h5>
+          <p class="card-text">$700</p>
+          <button type="button" class="boton">Agregar al carrito</button>
         </div>
       </div>
     </div>
   </div>
-</section>
+  <button type="button" class="boton-productos">Ver todos los productos</button>
 
+</section>
+<footer class="footer">
+  <div class="footer-contact"> 
+    <div class="footer-contact-card">
+    <!--<h2 class="footer-title">CONTACTANOS</h2>-->
+    <div class="socialmedia">
+      <a href="#">
+        <img class="media-logo" src="./img/whatsapp-circle.svg" alt="logo wp">
+      </a>                
+      <a href="#">
+        <img class="media-logo" src="./img/gmail-circle.svg" alt="logo fb">
+      </a>
+     </div>
+    </div>
+    <div class="footer-contact-card">
+    <!--<h2 class="footer-title">REDES SOCIALES</h2>-->
+    <div class="socialmedia">
+      <a href="#">
+        <img class="media-logo" src="./img/instagram-circle.svg" alt="logo wp">
+      </a>                
+      <a href="#">
+        <img class="media-logo" src="./img/facebook-circle.svg" alt="logo fb">
+      </a>
+    </div>
+    </div>
+  </div>
+  
+  <div class="dev-info">    
+      <p>© 2023 // <a class="linkedin" href="https://www.linkedin.com/in/mart%C3%ADn-barrandeguy-77b114149/">Martin Barrandeguy</a></p>
+
+   
+  </div>
+</footer>
   
     <script src="index.js"></script>
 </body>
