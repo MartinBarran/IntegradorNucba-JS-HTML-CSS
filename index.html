@@ -18,38 +18,50 @@
                   <img class="logo-img" src="./img/logo no bg.png" alt="logo">
                  </a>
                 </div>
-            
-                <input type="checkbox" id="check">
+                
+                <div class="nav-icons">
+                  <div class="cart-label">
+                    <i class="fa-solid fa-cart-shopping cart-icon">
+                      <div class="cart-bubble">0</div>
+                    </i>
+                  </div>
+                    <button class="hamburguer">
+                    <i class="fa-solid fa-bars menuIcon"></i>
+                    <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
+                  </button>
+                
+                <!--<input type="checkbox" id="check">
                 <label for="check" class="burguer">
                   <i class="fa-solid fa-bars"></i>
-                </label> 
-                <ul class="nav-menu">
-                      <li><a class="nav-menu-item" href="#inicio" class="active">
-                          Inicio
-                        </a></li>
-                      <li><a class="nav-menu-item" href="#productos">
-                        Productos
-                      </a></li>
-                  
-                      <li><a class="nav-menu-item" href="./nosotros.html">
-                        Nosotros
-                      </a></li>
-                  
-                      <li><a class="nav-menu-item" href="#contacto">
-                        Contacto
-                      </a></li>
-                  
-                      <li><a class="nav-menu-item" href="#preguntas-frecuentes">
-                        Preguntas Frecuentes  
-                      </a></li>  
-                      <li>
-                        <div class="buttons">
-                          <a class="navbar-item button button-signup button-responsive"  href=".registro.html">Registrarse</a>
-                          <a class="navbar-item button button-login button-responsive" href=".login.html">Ingresar</a>
-                        </div>
-                      </li>
-                    </div>         
-                </ul>
+                </label> -->
+                           
+              </div>
+              <ul class="nav-menu">
+                <li><a class="nav-menu-item" href="#inicio" class="active">
+                    Inicio
+                  </a></li>
+                <li><a class="nav-menu-item" href="./productos">
+                  Productos
+                </a></li>
+            
+                <li><a class="nav-menu-item" href="./nosotros.html">
+                  Nosotros
+                </a></li>
+            
+                <li><a class="nav-menu-item" href="./contacto.html">
+                  Contacto
+                </a></li>
+            
+                <li><a class="nav-menu-item" href="#preguntas-frecuentes">
+                  Preguntas Frecuentes  
+                </a></li>  
+                <li>
+                  <div class="buttons">
+                    <a class="navbar-item button button-signup button-responsive"  href=".registro.html">Registrarse</a>
+                    <a class="navbar-item button button-login button-responsive" href=".login.html">Ingresar</a>
+                  </div>
+                </li>    
+          </ul>
           </div>
           
           <!-- Acá va el navbar website-->
@@ -92,9 +104,9 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-      
-  </header>
-<section id="productos" class="products-section">
+      </header>
+
+<section id="novedades" class="novedades-section">
   <h2 class="section-title">Novedades</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
@@ -138,7 +150,8 @@
       </div>
     </div>
   </div>
-  <button type="button" class="boton-productos">Ver todos los productos</button>
+
+  <button type="button" class="boton-productos" href="./productos"><a class="boton-productos" href="./productos.html">Ver todos los productos</a></button>
 
 </section>
 <footer class="footer">
