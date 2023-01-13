@@ -4,74 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neurobit | Productos</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/cb8691b027.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top bg-body-tertiary">
-            <div class="navbar-celu">
-                <div >
-                 <a class="logo-link" href="./index.html">
-                  <img class="logo-img" src="./img/logo no bg.png" alt="logo">
-                 </a>
-                </div>
-                
-                <div class="nav-icons">
-                  <div class="cart-label">
-                    <i class="fa-solid fa-cart-shopping cart-icon">
-                      <div class="cart-bubble">0</div>
-                    </i>
-                  </div>
-                    <button class="hamburguer">
-                    <i class="fa-solid fa-bars menuIcon"></i>
-                    <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
-                  </button>
-                
-                <!--<input type="checkbox" id="check">
-                <label for="check" class="burguer">
-                  <i class="fa-solid fa-bars"></i>
-                </label> -->
-                           
+      <nav id="navbar" class="navbar fixed-top">
+        <div class="navbar-celu">
+            <div >
+             <a class="logo-link" href="./index.html">
+              <img class="logo-img" src="./img/logo no bg.png" alt="logo">
+             </a>
+            </div>
+            
+            <div class="nav-icons">
+              <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                  <div class="cart-bubble">0</div>
+                </i>
               </div>
-              <ul class="nav-menu">
-                <li><a class="nav-menu-item" href="#inicio" class="active">
-                    Inicio
-                  </a></li>
-                <li><a class="nav-menu-item" href="#productos">
-                  Productos
-                </a></li>
+                <button class="hamburguer">
+                <i class="fa-solid fa-bars menuIcon"></i>
+                <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
+              </button>
             
-                <li><a class="nav-menu-item" href="./nosotros.html">
-                  Nosotros
-                </a></li>
-            
-                <li><a class="nav-menu-item" href="./contacto.html">
-                  Contacto
-                </a></li>
-            
-                <li><a class="nav-menu-item" href="#preguntas-frecuentes">
-                  Preguntas Frecuentes  
-                </a></li>  
-                <li>
-                  <div class="buttons">
-                    <a class="navbar-item button button-signup button-responsive"  href=".registro.html">Registrarse</a>
-                    <a class="navbar-item button button-login button-responsive" href=".login.html">Ingresar</a>
-                  </div>
-                </li>    
-          </ul>
+            <!--<input type="checkbox" id="check">
+            <label for="check" class="burguer">
+              <i class="fa-solid fa-bars"></i>
+            </label> -->
+                       
           </div>
-          
-          <!-- Acá va el navbar website-->
-        </nav> 
+          <div class="mobile-menu">
+          <i class="fa-solid fa-xmark"></i>
+          <ul class="nav-menu">
+            <li><a class="nav-menu-item" href="#inicio" class="active">
+                Inicio
+              </a></li>
+            <li><a class="nav-menu-item" href="./productos.html">
+              Productos
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="./nosotros.html">
+              Nosotros
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="./contacto.html">
+              Contacto
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="#preguntas-frecuentes">
+              Preguntas Frecuentes  
+            </a></li>  
+            <li>
+              <div class="buttons">
+                <a class="navbar-item boton button-signup button-responsive"  href=".registro.html">Registrarse</a>
+                <a class="navbar-item boton button-login button-responsive" href=".login.html">Ingresar</a>
+              </div>
+            </li>    
+      </ul>
+      </div>
+    </div>
+      
+      <!-- Acá va el navbar website-->
+    </nav> 
     </header>
 
     <section id="productos">
-        <h2 class="section-title">Productos</h2>
+        <h2 class="section-title-home">Productos</h2>
 
         <div class="filtro">
-            <h6 class="filtro-txt">Filtros</h6>
+            <h5 class="filtro-txt"><i class="fa-solid fa-filter"></i>Filtros</h5>
+            
             <div class="filtro-container">
                 <button class="boton btn-filtro">Todos</button>
                 <button class="boton btn-filtro">Adultos Mayores</button>
@@ -217,7 +223,8 @@
        
       </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

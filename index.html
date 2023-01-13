@@ -4,68 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neurobit | Estimula tu Mente</title>
     
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/cb8691b027.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top bg-body-tertiary">
-            <div class="navbar-celu">
-                <div >
-                 <a class="logo-link" href="./index.html">
-                  <img class="logo-img" src="./img/logo no bg.png" alt="logo">
-                 </a>
-                </div>
-                
-                <div class="nav-icons">
-                  <div class="cart-label">
-                    <i class="fa-solid fa-cart-shopping cart-icon">
-                      <div class="cart-bubble">0</div>
-                    </i>
-                  </div>
-                    <button class="hamburguer">
-                    <i class="fa-solid fa-bars menuIcon"></i>
-                    <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
-                  </button>
-                
-                <!--<input type="checkbox" id="check">
-                <label for="check" class="burguer">
-                  <i class="fa-solid fa-bars"></i>
-                </label> -->
-                           
+      <nav id="navbar" class="navbar fixed-top">
+        <div class="navbar-celu">
+            <div >
+             <a class="logo-link" href="./index.html">
+              <img class="logo-img" src="./img/logo no bg.png" alt="logo">
+             </a>
+            </div>
+            
+            <div class="nav-icons">
+              <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                  <div class="cart-bubble">0</div>
+                </i>
               </div>
-              <ul class="nav-menu">
-                <li><a class="nav-menu-item" href="#inicio" class="active">
-                    Inicio
-                  </a></li>
-                <li><a class="nav-menu-item" href="./productos">
-                  Productos
-                </a></li>
+                <button class="hamburguer">
+                <i class="fa-solid fa-bars menuIcon"></i>
+                <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
+              </button>
             
-                <li><a class="nav-menu-item" href="./nosotros.html">
-                  Nosotros
-                </a></li>
-            
-                <li><a class="nav-menu-item" href="./contacto.html">
-                  Contacto
-                </a></li>
-            
-                <li><a class="nav-menu-item" href="#preguntas-frecuentes">
-                  Preguntas Frecuentes  
-                </a></li>  
-                <li>
-                  <div class="buttons">
-                    <a class="navbar-item button button-signup button-responsive"  href=".registro.html">Registrarse</a>
-                    <a class="navbar-item button button-login button-responsive" href=".login.html">Ingresar</a>
-                  </div>
-                </li>    
-          </ul>
+            <!--<input type="checkbox" id="check">
+            <label for="check" class="burguer">
+              <i class="fa-solid fa-bars"></i>
+            </label> -->
+                       
           </div>
-          
-          <!-- Acá va el navbar website-->
-        </nav> 
+          <div class="mobile-menu">
+          <i class="fa-solid fa-xmark"></i>
+          <ul class="nav-menu">
+            <li><a class="nav-menu-item" href="#inicio" class="active">
+                Inicio
+              </a></li>
+            <li><a class="nav-menu-item" href="./productos.html">
+              Productos
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="./nosotros.html">
+              Nosotros
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="./contacto.html">
+              Contacto
+            </a></li>
+        
+            <li><a class="nav-menu-item" href="#preguntas-frecuentes">
+              Preguntas Frecuentes  
+            </a></li>  
+            <li>
+              <div class="buttons">
+                <a class="navbar-item boton button-signup button-responsive"  href=".registro.html">Registrarse</a>
+                <a class="navbar-item boton button-login button-responsive" href=".login.html">Ingresar</a>
+              </div>
+            </li>    
+      </ul>
+      </div>
+    </div>
+      
+      <!-- Acá va el navbar website-->
+    </nav>  
        
         <!-- Acá va el hero carrousel-->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -107,7 +112,7 @@
       </header>
 
 <section id="novedades" class="novedades-section">
-  <h2 class="section-title">Novedades</h2>
+  <h2 class="section-title-home">Novedades</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card" style="width: 15rem;">
@@ -150,10 +155,57 @@
       </div>
     </div>
   </div>
-
   <button type="button" class="boton-productos" href="./productos"><a class="boton-productos" href="./productos.html">Ver todos los productos</a></button>
-
 </section>
+
+<section id="preguntas-frecuentes">
+  <div class="container-account">
+  <h2 class="section-title">Preguntas Frecuentes</h2>
+
+  <div id="container-acordeon" class="accordion accordion-flush">
+
+    <div id="container-faq" class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button  id="acordeon" class="accordion-button collapsed acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          ¿En qué formato se encuentran los contenidos Neurobit?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div id="cuerpo-acordeon" class="accordion-body">La mayoría de nuestros contenidos se encuentran únicamente en formato <strong>digital</strong>, y se envían mediante el correo electrónico en formato PDF. No obstante, para algunas regiones de la Argentina, contamos con determinados contenidos disponibles en su formato físico.</div>
+      </div>
+    </div>
+
+    <div id="container-faq" class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button id="acordeon" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          ¿Cómo y cuándo recibiré los contenidos Neurobit?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div id="cuerpo-acordeon" class="accordion-body">Nuestros contenidos digitales se envían de manera <strong>automática</strong> por medio del correo electrónico. Sugerimos revisar la carpeta de spam. Nuestros contenidos físicos, por correo tradicional. ¡Ponte en contacto con nosotros para realizar el seguimiento de tu pedido!</div>
+      </div>
+    </div>
+
+    <div id="container-faq" class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button id="acordeon" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          ¿Cómo me contacto con un representante de Neurobit?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div id="cuerpo-acordeon" class="accordion-body">Puedes contactarte con alguno de nuestros representantes comunicandote mediante nuestras redes sociales (<a href="https://www.facebook.com/">Facebook</a> o <a href="https://www.instagram.com/">Instragram</a>), o mediante nuestros canales de comunicación: <a href="url">Gmail</a> o <a href="url">Whatsapp</a>.</div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+  <p class="account-txt">¿Todavía tenés dudas? <a href="./contacto.html">¡Hablá con nosotros!</a></p>
+  </div>
+</section>
+
+
+
 <footer class="footer">
   <div class="footer-contact"> 
     <div class="footer-contact-card">
@@ -186,7 +238,7 @@
    
   </div>
 </footer>
-  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
