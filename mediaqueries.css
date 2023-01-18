@@ -1,0 +1,33 @@
+/* Tablet */
+@media (min-width: 992px) {
+    /*header*/
+    .hamburguer{
+        display:none;
+    }
+    .cart-icon{
+        margin-right: 2vh;
+    }
+    .navbar-buttons{
+      display: flex;
+    }
+    #nav-account-btn{
+      display: flex;
+    }
+
+}
+    
+  
+  /* Celu */
+  @media (max-width: 576px) {
+    .cart-menu{   
+      width: 75%;
+    }
+  }   
+  
+  
+  @media (max-width: 450px) {
+    .cart-menu{   
+      width: 100%;
+    }
+
+  } 

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neurobit | Productos</title>
+    <title>Neurobit | Productos</title>    
+
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://kit.fontawesome.com/cb8691b027.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="glassmorphism"></div>
     <header>
       <nav id="navbar" class="navbar fixed-top">
         <div class="navbar-celu">
@@ -19,28 +22,45 @@
               <img class="logo-img" src="./img/logo no bg.png" alt="logo">
              </a>
             </div>
+
+            <ul class="navbar-buttons">
+              <li class="nav-btn-item"><a class="nav-link-item" href="./index.html">
+                  Inicio
+                </a></li>
+
+          
+              <li class="nav-btn-item"><a class="nav-link-item" href="./nosotros.html">
+                Nosotros
+              </a></li>
+          
+              <li class="nav-btn-item"><a class="nav-link-item" href="./contacto.html">
+                Contacto
+              </a></li>
+          
+              <li class="nav-btn-item"><a class="nav-link-item" href="./index.html#preguntas-frecuentes">
+                Preguntas Frecuentes  
+              </a></li> 
+ 
+        </ul>
             
-            <div class="nav-icons">
-              <div class="cart-label">
-                <i class="fa-solid fa-cart-shopping cart-icon">
-                  <div class="cart-bubble">0</div>
-                </i>
-              </div>
-                <button class="hamburguer">
-                <i class="fa-solid fa-bars menuIcon"></i>
-                <!--<i class="fa-solid fa-bars closeIcon">Cerrar</i>-->
-              </button>
-            
-            <!--<input type="checkbox" id="check">
-            <label for="check" class="burguer">
-              <i class="fa-solid fa-bars"></i>
-            </label> -->
-                       
+        <div class="nav-icons">
+          <div id="nav-account-btn" class="buttons">
+            <a class="navbar-item boton button-signup button-responsive"  href="./register.html">Registrarse</a>
+            <a class="navbar-item boton button-login button-responsive" href="./login.html">Ingresar</a>
+          </div>
+          <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon">
+              <div class="cart-bubble">0</div>
+            </i>
+          </div>
+            <button class="hamburguer">
+            <i class="fa-solid fa-bars menuIcon"></i>
+          </button>                            
           </div>
           <div class="mobile-menu">
           <i class="fa-solid fa-xmark"></i>
           <ul class="nav-menu">
-            <li><a class="nav-menu-item" href="#inicio" class="active">
+            <li><a class="nav-menu-item" href="./index.html" class="active">
                 Inicio
               </a></li>
             <li><a class="nav-menu-item" href="./productos.html">
@@ -55,7 +75,7 @@
               Contacto
             </a></li>
         
-            <li><a class="nav-menu-item" href="#preguntas-frecuentes">
+            <li><a class="nav-menu-item" href="./index.html#preguntas-frecuentes"">
               Preguntas Frecuentes  
             </a></li>  
             <li>
@@ -67,9 +87,17 @@
       </ul>
       </div>
     </div>
-      
-      <!-- Acá va el navbar website-->
-    </nav> 
+    <div class="cart-menu">
+      <div class="cart-container"></div>
+        <div class="cart-text">
+          <h2>Carrito(0)</h2>
+          <h4 class="cart-empty">Tu carrito está vacío</h4>
+        </div>
+        <div class="cart-btn">
+          <button type="button" class="boton-productos" href="./productos"><a class="boton-productos" href="./productos.html">Ver productos</a></button>
+        </div>
+    </div>
+    </nav>
     </header>
 
     <section id="productos">

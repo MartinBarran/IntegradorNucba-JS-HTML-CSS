@@ -4,6 +4,7 @@
 --marron: #945600;
 --gris: #EBEBEB;
 --rosa: #B279A7;
+--links: #00A0C6;
 }
 
 *{
@@ -13,8 +14,7 @@
 }
 
 html,body{
-    overflow-x: hidden;
-    
+    overflow-x: hidden;      
 }
 a:link { text-decoration: none; }
 
@@ -33,7 +33,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 header{
     width: 100%;
@@ -54,7 +54,10 @@ nav{
     backdrop-filter: blur(4px);
     opacity: 0.95;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
+}
+#nicio{
+    height: 100%;
 }
 #navbar{
     padding: 0.5rem 1rem;
@@ -67,7 +70,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+   
    }
 
    .fa-xmark{
@@ -134,10 +137,48 @@ nav{
     padding-left: 1px;
     border-radius: 50%;
   }
+  .navbar-buttons{
+    list-style: none;
+    display: none;
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+  }
+.nav-btn-item{
+    padding: 0px;
+    margin:1.1vw;
+    font-weight: 600;
+    color: var(--violeta);
+    font-style: none;
+    text-decoration: none;
+    white-space: nowrap
+}
+.nav-link-item{
+    text-decoration: none;
+    color:var(--violeta);
+    text-shadow: 1px 1px 2px var(--gris), 0 0 1em var(--rosa), 0 0 0.2em var(--gris); 
+    
+}
+    
+.nav-link-item:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+#nav-account-btn{
+    flex-direction: row;
+    min-width: 175px;
+    display: none;
+}
+
 
 .carousel{
     padding-top: 12vh;
     margin-top:20px;
+}
+.carrousel-title{
+    color: var(--gris);
+    text-shadow: 1px 1px 2px var(--violeta), 0 0 1em var(--rosa), 0 0 0.2em var(--violeta);
 }
 
 #novedades{
@@ -500,13 +541,15 @@ border-color: var(--gris);
  display: block;
  width: 70%;
  border-radius: 20px;
+ min-width: 110px;
+  ; 
 }
 
 .account-txt{
     margin-bottom: 6vh;
     color: var(--gris);
     text-shadow: 1px 1px 2px var(--violeta), 0 0 1em var(--rosa), 0 0 0.2em var(--violeta);
-
+    text-align: center;
 }
 .account-txt a{
     color:#B8E1FF ;
@@ -598,9 +641,70 @@ border-color: var(--gris);
     opacity: 1;
 }
 .mobile-menu{
+    display: none;
+}
+
+
+
+.cart-menu{   
+    width: 50%;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    position: absolute;
+    margin-top: 12vh;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gris);    
+    text-align: left;
+    transition:all .5s;    
+    height: 88vh;    
+    border-left: 1.5px solid var(--violeta);
+    display:none;    
+}
+.cart-menu h2{
+    color: var(--violeta);
+    width: 100%;
+    
+}
+.cart-container{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(./img/PlantDoodle.svg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+    
+}
+.cart-text{
+    width:100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cart-empty{
+    text-align: center;
+    padding:80px;
+    margin-top: 50px;
+}
+
+.glassmorphism {
+    position:fixed;
+    width: 100%;
+    height: 100vh; 
+    z-index: 101; 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     display:none;
 }
 
-.showMenu {
-    display:block;
-  }
