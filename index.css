@@ -690,8 +690,8 @@ border-color: var(--gris);
     height: 65vh;
     display: flex;
     flex-direction: column;
-    
 }
+
 .cart-empty{
     text-align: center;
     padding:80px;
