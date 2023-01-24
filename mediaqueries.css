@@ -14,8 +14,14 @@
       display: flex;
     }
 
+
 }
-    
+
+@media (max-width: 850px) {
+  .cart-menu{   
+    width: 66%;
+  }
+}     
   
   /* Celu */
   @media (max-width: 576px) {

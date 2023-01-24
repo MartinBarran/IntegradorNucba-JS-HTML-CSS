@@ -185,6 +185,12 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+.novedades-container{
+    width: 100%;
+    height: auto;
+    display: flex;
 }
 .col{
     display: flex; 
@@ -197,9 +203,11 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 .card-title{
-    color: var(--violeta)
+    color: var(--violeta);
+    text-align: center;
 }
 .card-text{
     color:#B279A7;
@@ -237,7 +245,11 @@ nav{
     cursor: pointer;
 
 }
-
+.prod-container{
+    display: flex:
+    height: auto;
+    width: 100%&;
+}
 
 #nosotros{
     height: auto;
@@ -615,7 +627,6 @@ border-color: var(--gris);
     margin-right: 20px;
     border: none;
     background:rgba(235, 235, 235, 0.95);
-
     cursor: pointer;
     font-size: 28px;
     color: #4C184E;
@@ -645,7 +656,39 @@ border-color: var(--gris);
 }
 
 
-
+.added-product-card{
+    display: flex;
+    height: 6rem;
+    margin: 20px;
+}
+.added-img{    
+    height: 100%;
+}
+.added-card-body{
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+}
+.added-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.added-container1 h7{
+    
+}
+.cart-container-icon{
+    color: var(--violeta);
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+}
+.cart-item-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
 .cart-menu{   
     width: 50%;
     backdrop-filter: blur(4px);
