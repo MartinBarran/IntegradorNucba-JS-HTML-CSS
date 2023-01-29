@@ -107,11 +107,23 @@
             <h5 class="filtro-txt"><i class="fa-solid fa-filter"></i>Filtros</h5>
             
             <div class="filtro-container">
-                <button class="boton btn-filtro">Todos</button>
-                <button class="boton btn-filtro">Adultos Mayores</button>
-                <button class="boton btn-filtro">Adultos</button>
-                <button class="boton btn-filtro">Adolescentes</button>
-                <button class="boton btn-filtro">Niños/as</button>
+              <input id="todos" type="checkbox" data-category="adultosMayores adultos adolescentes ninios" checked>
+              <label class="boton btn-filtro" for="todos" >Todos</label>
+
+              <input id="adultos-mayores" type="checkbox" data-category="adultosMayores">
+              <label class="boton btn-filtro btn-f-no-todos" for="adultos-mayores">Adultos Mayores</label>
+
+              <input id="adultos" type="checkbox" data-category="adultos">
+              <label class="boton btn-filtro btn-f-no-todos" for="adultos">Adultos</label> 
+
+              <input id="adolescentes" type="checkbox" data-category="adolescentes">
+              <label class="boton btn-filtro btn-f-no-todos" for="adolescentes">Adolescentes</label>
+
+              <input id="ninios" type="checkbox" data-category="ninios">
+              <label class="boton btn-filtro btn-f-no-todos" for="ninios">Niños/as</label>
+
+
+                
             </div>
         
         </div>

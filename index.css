@@ -246,9 +246,9 @@ nav{
 
 }
 .prod-container{
-    display: flex:
+    display: flex;
     height: auto;
-    width: 100%&;
+    width: 100%;
 }
 
 #nosotros{
@@ -429,19 +429,28 @@ font-weight: 600;
     background-color: rgba(178, 121, 167, .5);
 
 }
+.filtro input{
+    visibility:hidden;
+
+}
+.filtro input:checked + .btn-filtro{ 
+    background-color: #00A0C6;
+
+}
 .filtro-container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    
+    margin-bottom: 30px;
+    padding: 20px;
 }
 .btn-filtro{
    margin: 15px;
-   min-height: 50px;
+   padding: 1rem;
    font-weight: 600;
+
 
 }
 .filtro-txt{
@@ -674,9 +683,7 @@ border-color: var(--gris);
     justify-content: space-between;
     align-items: center;
 }
-.added-container1 h7{
-    
-}
+
 .cart-container-icon{
     color: var(--violeta);
     cursor: pointer;

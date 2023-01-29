@@ -1,4 +1,4 @@
-import { mobileMenu, cartMenu, glassmorphism, } from "../main.js";
+import { mobileMenu, cartMenu, glassmorphism } from "../main.js";
 
 //FUNCIÓN PARA ABRIR MOBILE MENU
 export function openMenu() {
