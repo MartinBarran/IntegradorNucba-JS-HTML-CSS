@@ -61,6 +61,11 @@ function renderNovedades(arr){
 //FUNCIÓN PARA RENDERIZAR todos los objetos del array en la sección "Productos" 
 function renderProd(arr){
   if(prodContainer !== null){
+    //if(arr.length == 0){
+    //  arr = productsData;
+    //  console.log(arr);
+    //  return arr;
+    //}
     prodContainer.innerHTML =  `""`;  //Agrego esta linea porque, de otro modo, el array con productos filtrados se renderiza añadiéndose (y no reemplazando) a lo anteriormente renderizado. Además, por algún motivo que no logro encontrar, tanto la función para crear array con filtros vigentes como la función para crear nuevo array de productos con dichos filtros, se ejecuta 2 veces (duplicadamente), primero, con el estado anterior, y luego, con el nuevo estado del array (Ver consola para comprender mejor)
       for (let i = 0; i < arr.length; i++) {
         let obj = arr[i];
@@ -111,7 +116,7 @@ function filterArray(){
   let checkedCheckboxes =  document.querySelectorAll("input[type='checkbox']:checked");
   for (let i = 0; i < checkedCheckboxes.length; i++) {
     checkboxesArray.push(checkedCheckboxes[i].dataset.category.split(" "))
-  }
+  }  
   return checkboxesArray.flat();
 }
 
@@ -255,15 +260,18 @@ function filterCheckboxes(e){
   console.log(activeFilterArray);
   atLeastOneFilterChecked(activeFilterArray, e); //Segundo, garantiza el correcto funcionamiento de los botones filtro.
   renderFilteredArray(activeFilterArray);  //Tercero, renderiza el array de productos filtrados.
-}
+}//}
 
 //FUNCIÓN PARA RENDERIZAR PRODUCTOS. 
 function renderFilteredArray(arr){  //Recibe array de categorías de filtro activa.
-  let filteredProductsData = [];    //Crea nuevo array vacío. 
+  let filteredProductsData = [];  //Crea nuevo array vacío.  
   arr.forEach(element => {          //Toma cada elemento del array de categorías de filtro activa y compara con el array de productos
    let matchingCases = productsData.filter(product => product.ageRange == element); //Crea un nuevo array con las coincidencias.
    filteredProductsData = filteredProductsData.concat(matchingCases);   //Actualiza el array creado anteriormente sumando, a sus antiguos elementos, las nuevas coincidencias.
   });
+  if (filteredProductsData.length == 0){
+    filteredProductsData = productsData;
+  }
   renderProd(filteredProductsData);   //Envía array de productos filtrados para su renderización.
   console.log(filteredProductsData);
 }
