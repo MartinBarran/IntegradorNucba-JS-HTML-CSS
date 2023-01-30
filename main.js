@@ -61,11 +61,6 @@ function renderNovedades(arr){
 //FUNCIÓN PARA RENDERIZAR todos los objetos del array en la sección "Productos" 
 function renderProd(arr){
   if(prodContainer !== null){
-    //if(arr.length == 0){
-    //  arr = productsData;
-    //  console.log(arr);
-    //  return arr;
-    //}
     prodContainer.innerHTML =  `""`;  //Agrego esta linea porque, de otro modo, el array con productos filtrados se renderiza añadiéndose (y no reemplazando) a lo anteriormente renderizado. Además, por algún motivo que no logro encontrar, tanto la función para crear array con filtros vigentes como la función para crear nuevo array de productos con dichos filtros, se ejecuta 2 veces (duplicadamente), primero, con el estado anterior, y luego, con el nuevo estado del array (Ver consola para comprender mejor)
       for (let i = 0; i < arr.length; i++) {
         let obj = arr[i];
@@ -150,6 +145,7 @@ const renderCartProduct = (product) => {
   //Analiza si ya existe dichoa artículo en carrito. Si existe, le agrega una unidad a quantity.
   //De otro modo, crea el producto en el array Cart y renderiza obj. Guarda en LS y actualiza la renderización del carrito.
   function addToCart(e){
+    if(prodContainer !== null || novContainer !== null){
       if (e.target.id == "add-cart-btn"){
           const { id, name, cost, type, img } = e.target.dataset;
           let product = productConstructor(id, name, cost, type, img);
@@ -166,7 +162,7 @@ const renderCartProduct = (product) => {
           }   
           saveLocalStorage(cart);
           renderCart(cart);  
-      }
+      }}
   }    
 
   //FUNCIÓN QUE CREA PRODUCTO(objeto) EN EL CART(array) del LS Y CREA PROPIEDAD "quantity" con valor 1.
@@ -309,7 +305,7 @@ closeIcon.addEventListener("click", closeMenu);
 glassmorphism.addEventListener("click", toggleCart);
 renderNovedades(productsData);
 renderProd(productsData);
-addCartBtn.addEventListener("click", addToCart);
+document.body.addEventListener("click", addToCart);
 document.body.addEventListener( 'click', deleteCartProduct);
 document.body.addEventListener( 'click', cartUnits);
 document.body.addEventListener( 'click', filterCheckboxes);
