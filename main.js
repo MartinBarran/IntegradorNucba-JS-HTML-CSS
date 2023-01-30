@@ -95,7 +95,7 @@ const renderCart = () => {
   if (!cart.length) {
     cartTxt.innerHTML = `<h2>Carrito (0)</h2> 
     <p>No hay productos en el carrito.</p>`;
-    cartBtn.innerHTML = `<button type="button" class="boton-productos" href=""><a class="boton-productos" href="./productos.html">Ver productos</a></button>`
+    cartBtn.innerHTML = `<button type="button" class="boton-productos" href=""><a class="boton-enlace" href="./productos.html">Ver productos</a></button>`
     bubbleNumber(); 
     return;
   }
@@ -245,7 +245,7 @@ function substractUnit(e){
       cart.map(function(obj){
         count = count + (obj.cost*obj.quantity);
   cartBtn.innerHTML = `<h2>Total = $${count}</h2>
-  <button type="button" class="boton-productos" href="./productos"><a class="boton-productos" href="./">COMPRAR</a></button>`;
+  <button type="button" class="boton-productos" href="./productos"><a class="boton-enlace" href="./">COMPRAR</a></button>`;
       })
     }
   }
